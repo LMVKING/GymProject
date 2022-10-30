@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymProject.Vistas.VRegistro" NavigationPage.HasNavigationBar="False"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows" 
+             BackgroundImageSource="Fondo.jpg" BackgroundColor="Black">
+    <Grid >
+        
+        <StackLayout>
+            <Frame BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="GYM ABC" TextColor="White" FontSize="40" FontAttributes="Bold" FontFamily="Font1"/>
+            </Frame>
+           
+            <Frame HasShadow="False" CornerRadius="70"
+                   HorizontalOptions="End"
+                    VerticalOptions="EndAndExpand" 
+                   Margin="0,0,10,0"
+                   Padding="0" BackgroundColor="Transparent">
+                <Image Source="abc.png"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        VerticalOptions="End"
+                        HorizontalOptions="End">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ircrearcuentacommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
